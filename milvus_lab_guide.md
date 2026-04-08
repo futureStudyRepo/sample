@@ -68,7 +68,7 @@ import numpy as np
 # ── 로컬 Docker Standalone 연결 ──────────────────────────
 client = MilvusClient(
     uri   = "http://localhost:19530",
-    token = "root:Milvus",   # 기본 계정 (변경했다면 수정)
+    token = "root:Milvus",  
 )
 
 # 연결 확인
