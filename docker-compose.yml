@@ -68,6 +68,7 @@ services:
       - "8000:3000"
     environment:
       MILVUS_URL: milvus-standalone:19530
+      CHECK_HEALTH: "false"
     depends_on:
       - "standalone"
 
