@@ -76,6 +76,11 @@ MQ_TYPE: rocksmq
 v2.3.x etcd 데이터가 남아 있어 새 버전이 기동 중 크래시
 
 ```bash
+cd ~
+# 1. 기존 컨테이너 및 데이터 삭제 (처음 설치면 에러나도 무시)
+docker-compose down -v
+docker rm -f attu
+rm -rf volumes/
 docker-compose down -v
 rm -rf volumes/
 docker-compose up -d
